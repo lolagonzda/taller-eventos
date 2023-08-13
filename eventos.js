@@ -1,13 +1,13 @@
-const container = document.getElementById("container");
-const btn = document.querySelector ("button")
-
-
-function saludar () {
-    alert ("Hola! Soy el div")
+function funcionSaludo(){
+    alert ("Hola!");
 }
+let btn = document.getElementById("btn");
+let container = document.getElementById('container');
 
-container.addEventListener("click", saludar);
+container.addEventListener("click", function() {
+    alert("Hola! Soy el div");
+});
 
-btn.addEventListener("click", function(saludar) {
-    saludar.stopPropagation();
+btn.addEventListener("click", function(event) {
+    event.stopPropagation(); 
 });
