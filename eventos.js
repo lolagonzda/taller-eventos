@@ -2,9 +2,9 @@ function funcionSaludo(){
     alert ("Hola!");
 }
 let btn = document.getElementById("btn");
-let miDiv = document.getElementById('miDiv');
+let container = document.getElementById('container');
 
-miDiv.addEventListener("click", function() {
+container.addEventListener("click", function() {
     alert("Hola! Soy el div");
 });
 
